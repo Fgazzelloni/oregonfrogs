@@ -18,3 +18,7 @@ Imports:
     roxygen2,
     tidyverse
 RoxygenNote: 7.1.2
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
