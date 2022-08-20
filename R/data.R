@@ -1,10 +1,13 @@
 #' Oregon Spotted a Frog (Rana pretiosa)
 #'
-#' Telemetry and habitat use at Crane Prairie Reservoir in Oregon, USA
-
-#' 2022-04-06
-#'@format A data frame with `r nrow(oregonfrogs)` rows and `r ncol(oregonfrogs)`
-#'variables:
+#'
+#' Telemetry and habitat use at Crane Prairie Reservoir in Oregon, USA.
+#' Radio-telemetry has been used to study late-season movement and habitat use by Oregon spotted frogs (Rana pretiosa) at Crane Prairie Reservoir in Oregon. This dataset includes individual frog location data and habitat use during each tracking event that occurred roughly weekly between September and late November of 2018.
+#'
+#'
+#' @format A data frame with 311 rows and 16 cols.
+#'
+#' Variables:
 #'
 #' \describe{
 #' \item{Site}{character, location}
@@ -24,5 +27,8 @@
 #' \item{Beaver}{character,	beaver (Burrow,Channel/runway,Lodge,No beaver)}
 #' \item{Detection}{character,	detection type (Captured,No visual,Visual)}
 #' }
-#' #' @source \url{https://www.sciencebase.gov/catalog/item/60ba5a00d34e86b9388d86bc}
+#'
+#' @source {Oregon Spotted Frogs courtesy of Federica Gazzelloni #TidyTuesday Edition 2022 week 31 |
+#' Original source of data is @USGS study from Pearl, C.A., Rowe, J.C., McCreary, B., and Adams, M.J., 2022.
+#' Geological Survey data release, https://doi.org/10.5066/P9DACPCV}
 "oregonfrogs"

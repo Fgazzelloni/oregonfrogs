@@ -1,0 +1,74 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "75%",
+  warning = FALSE,
+  message = FALSE,
+  fig.retina = 2,
+  fig.align = 'center'
+)
+library(tidyverse)
+library(oregonfrogs)
+```
+
+# oregonfrogs <a href='https://fgazzelloni.github.io/oregonfrogs/'><img src='man/figures/logo.png' align="right" height="138.5" /></a>
+
+
+<!-- badges: start -->
+
+[![DOI](https://zenodo.org/badge/526891877.svg)](https://zenodo.org/badge/latestdoi/526891877)
+
+
+<!-- badges: end -->
+
+The goal of oregonfrogs is to provide a great dataset for data exploration & visualization.
+
+## Installation
+
+You can install the development version of oregonfrogs like so:
+
+To install the development version from [GitHub](https://github.com/) use:
+
+``` r
+# install.packages("remotes")
+remotes::install_github("fgazzelloni/oregonfrogs")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(oregonfrogs)
+data(package = 'oregonfrogs')
+```
+
+What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+
+```{r cars}
+head(oregonfrogs)
+```
+
+
+
+For example:
+
+```{r habitat, echo = FALSE}
+ggplot(oregonfrogs,
+       aes(x=HabType,y=Frequency))+
+         geom_point(aes(color=factor(Female)),size=2,alpha=0.5)+
+ggthemes::scale_color_tableau()+
+  labs(color="Sex")+
+  ggthemes::theme_fivethirtyeight()+
+  theme(axis.title = element_text())
+```
+
+
