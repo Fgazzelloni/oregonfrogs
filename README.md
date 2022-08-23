@@ -54,3 +54,8 @@ head(oregonfrogs)
 For example:
 
 <img src="man/figures/README-habitat-1.png" width="75%" style="display: block; margin: auto;" />
+
+Please note that the oregonfrogs project is released with a [Contributor
+Code of
+Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.
