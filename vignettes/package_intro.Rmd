@@ -1,8 +1,8 @@
 ---
-title: "oregonfrogs"
+title: "package_intro"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{oregonfrogs}
+  %\VignetteIndexEntry{package_intro}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
