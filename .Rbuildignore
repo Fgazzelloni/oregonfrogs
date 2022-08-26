@@ -12,3 +12,6 @@
 ^cran-comments\.md$
 
 
+^oregonfrogs\.Rcheck$
+^oregonfrogs.*\.tar\.gz$
+^oregonfrogs.*\.tgz$
