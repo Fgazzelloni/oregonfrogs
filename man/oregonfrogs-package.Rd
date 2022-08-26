@@ -10,4 +10,17 @@
 
 Oregon Frogs Rana Pretiosa dataset contains information about radio telemetry frequency used to study the frogs' habitat. The survey run from late September to November 2018. There are 311 observations and 16 variables.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://fgazzelloni.github.io/oregonfrogs/}
+  \item \url{https://github.com/fgazzelloni/oregonfrogs}
+  \item Report bugs at \url{https://github.com/fgazzelloni/oregonfrogs/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: Federica Gazzelloni \email{fede.gazzelloni@gmail.com} (\href{https://orcid.org/0000-0002-4285-611X}{ORCID})
+
+}
 \keyword{internal}

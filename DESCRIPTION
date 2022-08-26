@@ -8,7 +8,7 @@ Authors@R: c(
            family = "Gazzelloni",
            role = c("aut", "cre"),
            email = "fede.gazzelloni@gmail.com",
-           comment = c(ORCID = "0000-0002-4285-611X")),
+           comment = c(ORCID = "0000-0002-4285-611X")))
 Maintainer: The package maintainer <fede.gazzelloni@gmail.com>
 Description: Oregon Frogs Rana Pretiosa dataset contains information about
     radio telemetry frequency used to study the frogs' habitat. 
