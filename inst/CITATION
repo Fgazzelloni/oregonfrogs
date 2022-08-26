@@ -1,0 +1,14 @@
+citHeader("To cite oregonfrogs in publications use:")
+
+citEntry(
+  entry    = "Manual",
+  title    = "oregonfrogs: Oregon Spotted a Frog (Rana Pretiosa) data",
+  author   = "Federica Gazzelloni",
+  year     = 2022,
+  note     = "R package version 0.1.0",
+  doi      = "10.5281/zenodo.7013018",
+  url      = "https://fgazzelloni.github.io/oregonfrogs/",
+  textVersion = paste(
+"Oregon Spotted Frogs courtesy of Federica Gazzelloni 10.5281/zenodo.7013018, #TidyTuesday Edition 2022 week 31. Original source of data is @USGS study from Pearl, C.A., Rowe, J.C., McCreary, B., and Adams, M.J., 2022. Geological Survey data release, https://doi.org/10.5066/P9DACPCV"
+  )
+)
