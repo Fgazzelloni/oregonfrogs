@@ -2,7 +2,12 @@ Package: oregonfrogs
 Type: Package
 Title: Oregon Spotted A Frog (Rana Pretiosa)
 Version: 0.1.0
-Author: Federica Gazzelloni
+Authors@R: c(
+    person(given = "Federica",
+           family = "Gazzelloni",
+           role = c("aut", "cre"),
+           email = "fede.gazzelloni@gmail.com",
+           comment = c(ORCID = "0000-0002-4285-611X")),
 Maintainer: The package maintainer <fede.gazzelloni@gmail.com>
 Description: Oregon Frogs Rana Pretiosa dataset contains information about
     radio telemetry frequency used to study the frogs' habitat. 
@@ -21,5 +26,6 @@ Suggests:
     knitr,
     rmarkdown,
     testthat (>= 3.0.0)
-VignetteBuilder: knitr
-Config/testthat/edition: 3
+URL: https://fgazzelloni.github.io/oregonfrogs/, https://github.com/fgazzelloni/oregonfrogs    
+BugReports: https://github.com/fgazzelloni/oregonfrogs/issues
+Config/Needs/website: here
