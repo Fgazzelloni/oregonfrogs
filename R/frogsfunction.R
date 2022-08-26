@@ -7,7 +7,6 @@
 #' @export
 #'
 #' @examples
-#' frogsfunction()
 frogsfunction <- function(data,predictor) {
   predictor_vector <- data$predictor
   print(predictor_vector)

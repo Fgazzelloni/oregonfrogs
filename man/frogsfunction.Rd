@@ -17,6 +17,3 @@ caracter
 \description{
 frogsfunction
 }
-\examples{
-frogsfunction()
-}

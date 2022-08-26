@@ -1,6 +1,6 @@
 ## code to prepare `DATASET` dataset goes here
 
-oregonfrogs <- frog <- read_csv("data/oregonfrogs_raw.csv",
+oregonfrogs <- frog <- read_csv("data-raw/oregonfrogs_raw.csv",
                                 col_names = TRUE,
                                 trim_ws = FALSE,
                                 skip = 2)
