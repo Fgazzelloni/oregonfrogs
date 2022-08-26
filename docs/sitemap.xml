@@ -1,27 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/404.html</loc>
+    <loc>https://fgazzelloni.github.io/oregonfrogs/404.html</loc>
   </url>
   <url>
-    <loc>/LICENSE.html</loc>
+    <loc>https://fgazzelloni.github.io/oregonfrogs/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>/articles/index.html</loc>
+    <loc>https://fgazzelloni.github.io/oregonfrogs/LICENSE.html</loc>
   </url>
   <url>
-    <loc>/articles/oregonfrogs.html</loc>
+    <loc>https://fgazzelloni.github.io/oregonfrogs/articles/index.html</loc>
   </url>
   <url>
-    <loc>/authors.html</loc>
+    <loc>https://fgazzelloni.github.io/oregonfrogs/articles/package_intro.html</loc>
   </url>
   <url>
-    <loc>/index.html</loc>
+    <loc>https://fgazzelloni.github.io/oregonfrogs/authors.html</loc>
   </url>
   <url>
-    <loc>/reference/index.html</loc>
+    <loc>https://fgazzelloni.github.io/oregonfrogs/index.html</loc>
   </url>
   <url>
-    <loc>/reference/oregonfrogs.html</loc>
+    <loc>https://fgazzelloni.github.io/oregonfrogs/reference/frogsfunction.html</loc>
+  </url>
+  <url>
+    <loc>https://fgazzelloni.github.io/oregonfrogs/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://fgazzelloni.github.io/oregonfrogs/reference/oregonfrogs-package.html</loc>
+  </url>
+  <url>
+    <loc>https://fgazzelloni.github.io/oregonfrogs/reference/oregonfrogs.html</loc>
   </url>
 </urlset>
