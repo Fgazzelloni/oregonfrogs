@@ -6,7 +6,7 @@
 \alias{oregonfrogs-package}
 \title{oregonfrogs: Oregon Spotted A Frog (Rana Pretiosa)}
 \description{
-\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
 Oregon Frogs Rana Pretiosa dataset contains information about radio telemetry frequency used to study the frogs' habitat. The survey run from late September to November 2018. There are 311 observations and 16 variables.
 }
