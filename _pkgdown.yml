@@ -9,6 +9,7 @@ author:
     href: federicagazzelloni.netlify.app
 template:
   bootstrap: 5
+  bootswatch: materia
   bslib:
     font_scale: 1.0
     base_font:
