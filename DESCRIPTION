@@ -30,3 +30,4 @@ Suggests:
 URL: https://fgazzelloni.github.io/oregonfrogs/, https://github.com/fgazzelloni/oregonfrogs    
 BugReports: https://github.com/fgazzelloni/oregonfrogs/issues
 Config/Needs/website: here
+VignetteBuilder: knitr
