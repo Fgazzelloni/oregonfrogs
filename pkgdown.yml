@@ -1,11 +1,6 @@
 pandoc: 2.14.2
 pkgdown: 2.0.6
 pkgdown_sha: ~
-articles:
-  orgonfrogs: orgonfrogs.html
-  package_intro: package_intro.html
-last_built: 2022-08-27T19:38Z
-urls:
-  reference: https://fgazzelloni.github.io/oregonfrogs/reference
-  article: https://fgazzelloni.github.io/oregonfrogs/articles
+articles: {}
+last_built: 2022-08-27T20:17Z
 
