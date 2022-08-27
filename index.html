@@ -49,6 +49,9 @@
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item">
+  <a class="nav-link" href="articles/oregonfrogs.html">Get started</a>
+</li>
+<li class="nav-item">
   <a class="nav-link" href="reference/index.html">Reference</a>
 </li>
       </ul>
@@ -77,7 +80,7 @@
 </h1>
 </div>
 <!-- badges: start -->
-<!-- badges: end --><p>The goal of oregonfrogs is to provide a great dataset for data exploration &amp; visualization.</p>
+<p>The goal of oregonfrogs is to provide a great dataset for data exploration &amp; visualization.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -98,16 +101,17 @@
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">oregonfrogs</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 6 × 16</span></span>
-<span><span class="co">#&gt;   Site     Subsite HabType SurveyDate Ordinal Frequency UTME_83 UTMN_83 Interval</span></span>
-<span><span class="co">#&gt;   &lt;chr&gt;    &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;        &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt; 1 Crane P… SE Pond Pond    9/25/2018      268      164.  597369 4846486        0</span></span>
-<span><span class="co">#&gt; 2 Crane P… SE Pond Pond    10/2/2018      275      164.  597352 4846487        1</span></span>
-<span><span class="co">#&gt; 3 Crane P… SE Pond Pond    10/9/2018      282      164.  597345 4846458        2</span></span>
-<span><span class="co">#&gt; 4 Crane P… SE Pond Pond    10/15/2018     288      164.  597340 4846464        3</span></span>
-<span><span class="co">#&gt; 5 Crane P… SE Pond Pond    10/22/2018     295      164.  597344 4846460        4</span></span>
-<span><span class="co">#&gt; 6 Crane P… SE Pond Pond    11/1/2018      305      164.  597410 4846451        5</span></span>
-<span><span class="co">#&gt; # … with 7 more variables: Female &lt;dbl&gt;, Water &lt;chr&gt;, Type &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   Structure &lt;chr&gt;, Substrate &lt;chr&gt;, Beaver &lt;chr&gt;, Detection &lt;chr&gt;</span></span></code></pre></div>
+<span><span class="co">#&gt;   Site    Subsite HabType Surve…¹ Ordinal Frequ…² UTME_83 UTMN_83 Inter…³ Female</span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;     &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt; 1 Crane … SE Pond Pond    9/25/2…     268    164.  597369 4846486       0      0</span></span>
+<span><span class="co">#&gt; 2 Crane … SE Pond Pond    10/2/2…     275    164.  597352 4846487       1      0</span></span>
+<span><span class="co">#&gt; 3 Crane … SE Pond Pond    10/9/2…     282    164.  597345 4846458       2      0</span></span>
+<span><span class="co">#&gt; 4 Crane … SE Pond Pond    10/15/…     288    164.  597340 4846464       3      0</span></span>
+<span><span class="co">#&gt; 5 Crane … SE Pond Pond    10/22/…     295    164.  597344 4846460       4      0</span></span>
+<span><span class="co">#&gt; 6 Crane … SE Pond Pond    11/1/2…     305    164.  597410 4846451       5      0</span></span>
+<span><span class="co">#&gt; # … with 6 more variables: Water &lt;chr&gt;, Type &lt;chr&gt;, Structure &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   Substrate &lt;chr&gt;, Beaver &lt;chr&gt;, Detection &lt;chr&gt;, and abbreviated variable</span></span>
+<span><span class="co">#&gt; #   names ¹​SurveyDate, ²​Frequency, ³​Interval</span></span></code></pre></div>
 <p>For example:</p>
 <p><img src="reference/figures/README-habitat-1.png" width="75%" style="display: block; margin: auto;"></p>
 <p>Please note that the oregonfrogs project is released with a <a href="https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html" class="external-link">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
@@ -148,6 +152,7 @@
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://zenodo.org/badge/latestdoi/526891877" class="external-link"><img src="https://zenodo.org/badge/526891877.svg" alt="DOI"></a></li>
+<li><a href="https://github.com/Fgazzelloni/oregonfrogs/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/Fgazzelloni/oregonfrogs/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
 </ul>
 </div>
 
