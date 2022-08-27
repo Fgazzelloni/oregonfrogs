@@ -1,0 +1,69 @@
+url: https://fgazzelloni.github.io/oregonfrogs
+
+
+home:
+  title: oregonfrogs R data package
+  description: Data for data science teaching and learning.
+
+authors:
+  Federica Gazzelloni:
+    href: https://www.github.com/fgazzelloni
+
+
+template:
+  bootstrap: 5
+  bslib:
+    font_scale: 1.0
+    base_font:
+      google: "Jost"
+    code_font:
+      google: "Overpass Mono"
+    heading_font:
+      google: "Abhaya Libre"
+    bg: "#fcfbf9"         # lighten springwood background
+    fg: "#231F20"         # contrast ratio: 15.76 for text
+    primary: "#272b30"    # dark blue active text
+    secondary: "#BED4E2"  # blue active pill background
+    link-color: "#437597" # brighter link color, contrast 4.52
+    info: "#BED4E2"       # version badge bg
+    headings-color: "#336688"
+    # navbar
+    navbar-bg: "#fcfbf9"  # match to site bg
+    navbar-light-color: "#272b30"
+    navbar-light-hover-color: "#336688"
+  params:
+    ganalytics: UA-169202294-1
+  opengraph:
+    image:
+      src: man/figures/oregonfrogs.png
+      alt: "oregonfrogs data package in R"
+    twitter:
+      creator: "@fgazzelloni"
+      card: summary
+
+navbar:
+  type: light
+  bg: "#fcfbf9"  # apparently this plus navbar-bg needs to be set to same color?
+  structure:
+    left:  [home, intro, reference, articles]
+    right: [github]
+  components:
+    intro:
+      text: "Get started"
+      href: articles/intro.html
+    articles:
+      text: Articles
+      menu:
+      - text: "Use oregonfrogs"
+      - text: Examples using ggplot2
+        href: articles/examples.html
+      - text: Extra example
+        href: articles/Extra.html
+      - text: Community examples
+        href: articles/user_contributions.html
+      - text: -------
+      - text: Extras
+      - text: Art
+        href: articles/art.html
+      - text: Download the data directly
+        href: articles/download.html
