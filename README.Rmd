@@ -26,8 +26,7 @@ library(oregonfrogs)
 <!-- badges: start -->
 
 [![DOI](https://zenodo.org/badge/526891877.svg)](https://zenodo.org/badge/latestdoi/526891877)
-
-
+[![R-CMD-check](https://github.com/Fgazzelloni/oregonfrogs/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Fgazzelloni/oregonfrogs/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of oregonfrogs is to provide a great dataset for data exploration & visualization.

@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![DOI](https://zenodo.org/badge/526891877.svg)](https://zenodo.org/badge/latestdoi/526891877)
-
+[![R-CMD-check](https://github.com/Fgazzelloni/oregonfrogs/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Fgazzelloni/oregonfrogs/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of oregonfrogs is to provide a great dataset for data
@@ -39,16 +39,17 @@ You can include R chunks like so:
 ``` r
 head(oregonfrogs)
 #> # A tibble: 6 × 16
-#>   Site     Subsite HabType SurveyDate Ordinal Frequency UTME_83 UTMN_83 Interval
-#>   <chr>    <chr>   <chr>   <chr>        <dbl>     <dbl>   <dbl>   <dbl>    <dbl>
-#> 1 Crane P… SE Pond Pond    9/25/2018      268      164.  597369 4846486        0
-#> 2 Crane P… SE Pond Pond    10/2/2018      275      164.  597352 4846487        1
-#> 3 Crane P… SE Pond Pond    10/9/2018      282      164.  597345 4846458        2
-#> 4 Crane P… SE Pond Pond    10/15/2018     288      164.  597340 4846464        3
-#> 5 Crane P… SE Pond Pond    10/22/2018     295      164.  597344 4846460        4
-#> 6 Crane P… SE Pond Pond    11/1/2018      305      164.  597410 4846451        5
-#> # … with 7 more variables: Female <dbl>, Water <chr>, Type <chr>,
-#> #   Structure <chr>, Substrate <chr>, Beaver <chr>, Detection <chr>
+#>   Site    Subsite HabType Surve…¹ Ordinal Frequ…² UTME_83 UTMN_83 Inter…³ Female
+#>   <chr>   <chr>   <chr>   <chr>     <dbl>   <dbl>   <dbl>   <dbl>   <dbl>  <dbl>
+#> 1 Crane … SE Pond Pond    9/25/2…     268    164.  597369 4846486       0      0
+#> 2 Crane … SE Pond Pond    10/2/2…     275    164.  597352 4846487       1      0
+#> 3 Crane … SE Pond Pond    10/9/2…     282    164.  597345 4846458       2      0
+#> 4 Crane … SE Pond Pond    10/15/…     288    164.  597340 4846464       3      0
+#> 5 Crane … SE Pond Pond    10/22/…     295    164.  597344 4846460       4      0
+#> 6 Crane … SE Pond Pond    11/1/2…     305    164.  597410 4846451       5      0
+#> # … with 6 more variables: Water <chr>, Type <chr>, Structure <chr>,
+#> #   Substrate <chr>, Beaver <chr>, Detection <chr>, and abbreviated variable
+#> #   names ¹​SurveyDate, ²​Frequency, ³​Interval
 ```
 
 For example:
