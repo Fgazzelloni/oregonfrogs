@@ -28,6 +28,21 @@
     <loc>https://fgazzelloni.github.io/oregonfrogs/reference/index.html</loc>
   </url>
   <url>
+    <loc>https://fgazzelloni.github.io/oregonfrogs/reference/longlat_to_utm.html</loc>
+  </url>
+  <url>
+    <loc>https://fgazzelloni.github.io/oregonfrogs/reference/oregonfrogs-package.html</loc>
+  </url>
+  <url>
     <loc>https://fgazzelloni.github.io/oregonfrogs/reference/oregonfrogs.html</loc>
+  </url>
+  <url>
+    <loc>https://fgazzelloni.github.io/oregonfrogs/reference/orfrogs.html</loc>
+  </url>
+  <url>
+    <loc>https://fgazzelloni.github.io/oregonfrogs/reference/tidyeval.html</loc>
+  </url>
+  <url>
+    <loc>https://fgazzelloni.github.io/oregonfrogs/reference/utm_to_longlat.html</loc>
   </url>
 </urlset>
