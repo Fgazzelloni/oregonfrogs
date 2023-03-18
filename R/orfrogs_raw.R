@@ -31,4 +31,4 @@
 #' @source {Oregon Spotted Frogs courtesy of Federica Gazzelloni #TidyTuesday Edition 2022 week 31 |
 #' Original source of data is @USGS study from Pearl, C.A., Rowe, J.C., McCreary, B., and Adams, M.J., 2022.
 #' Geological Survey data release, https://doi.org/10.5066/P9DACPCV}
-"oregonfrogs"
+"orfrogs_raw"
