@@ -7,7 +7,7 @@ output: github_document
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>",
+  comment = "",
   fig.path = "man/figures/README-",
   out.width = "75%",
   warning = FALSE,
@@ -44,32 +44,33 @@ remotes::install_github("fgazzelloni/oregonfrogs")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to load the package and available data:
 
 ```{r example}
 library(oregonfrogs)
 data(package = 'oregonfrogs')
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+
+Let's have a look at the dataset provided `orfrogs`.
 
 ```{r data}
-head(oregonfrogs)
+head(orfrogs)
 ```
 
 
 
-For example:
+For example we can use the package for making data visualization:
 
 ```{r habitat, echo = FALSE}
-ggplot(oregonfrogs,
-       aes(x=HabType,y=Frequency))+
-         geom_point(aes(color=factor(Female)),size=2,alpha=0.5)+
+ggplot(orfrogs,
+       aes(x=hab_type,y=frequency))+
+         geom_point(aes(color=factor(sex)),size=2,alpha=0.5)+
 ggthemes::scale_color_tableau()+
-  labs(color="Sex")+
+  labs(color="Sex",x="HabType",y="Frequency")+
   ggthemes::theme_fivethirtyeight()+
   theme(axis.title = element_text())
 ```
 
 
-Please note that the oregonfrogs project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
+Please note that the **oregonfrogs** project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.

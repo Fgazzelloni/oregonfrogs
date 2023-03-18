@@ -26,37 +26,39 @@ remotes::install_github("fgazzelloni/oregonfrogs")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to load the package and
+available data:
 
 ``` r
 library(oregonfrogs)
 data(package = 'oregonfrogs')
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+Let’s have a look at the dataset provided `orfrogs`.
 
 ``` r
-head(oregonfrogs)
-#> # A tibble: 6 × 16
-#>   Site    Subsite HabType Surve…¹ Ordinal Frequ…² UTME_83 UTMN_83 Inter…³ Female
-#>   <chr>   <chr>   <chr>   <chr>     <dbl>   <dbl>   <dbl>   <dbl>   <dbl>  <dbl>
-#> 1 Crane … SE Pond Pond    9/25/2…     268    164.  597369 4846486       0      0
-#> 2 Crane … SE Pond Pond    10/2/2…     275    164.  597352 4846487       1      0
-#> 3 Crane … SE Pond Pond    10/9/2…     282    164.  597345 4846458       2      0
-#> 4 Crane … SE Pond Pond    10/15/…     288    164.  597340 4846464       3      0
-#> 5 Crane … SE Pond Pond    10/22/…     295    164.  597344 4846460       4      0
-#> 6 Crane … SE Pond Pond    11/1/2…     305    164.  597410 4846451       5      0
-#> # … with 6 more variables: Water <chr>, Type <chr>, Structure <chr>,
-#> #   Substrate <chr>, Beaver <chr>, Detection <chr>, and abbreviated variable
-#> #   names ¹​SurveyDate, ²​Frequency, ³​Interval
+head(orfrogs)
+  detection survey_date doy      long      lat sex frequency interval subsite
+1  Captured  2018-09-25 268 -121.7903 43.76502   0   164.169        0 SE Pond
+2 No visual  2018-10-02 275 -121.7905 43.76503   0   164.169        1 SE Pond
+3 No visual  2018-10-09 282 -121.7906 43.76477   0   164.169        2 SE Pond
+4 No visual  2018-10-15 288 -121.7907 43.76483   0   164.169        3 SE Pond
+5 No visual  2018-10-22 295 -121.7906 43.76479   0   164.169        4 SE Pond
+6 No visual  2018-11-01 305 -121.7898 43.76470   0   164.169        5 SE Pond
+  hab_type         water       type      structure         substrate    beaver
+1     Pond    Deep water Marsh/Pond Herbaceous veg Unknown substrate No beaver
+2     Pond    Deep water Marsh/Pond           Open Unknown substrate No beaver
+3     Pond Shallow water Marsh/Pond Herbaceous veg Unknown substrate No beaver
+4     Pond    Deep water Marsh/Pond   Woody debris Unknown substrate No beaver
+5     Pond    Deep water Marsh/Pond      Woody veg Unknown substrate No beaver
+6     Pond    Deep water Marsh/Pond Herbaceous veg Unknown substrate No beaver
 ```
 
-For example:
+For example we can use the package for making data visualization:
 
 <img src="man/figures/README-habitat-1.png" width="75%" style="display: block; margin: auto;" />
 
-Please note that the oregonfrogs project is released with a [Contributor
-Code of
+Please note that the **oregonfrogs** project is released with a
+[Contributor Code of
 Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
 By contributing to this project, you agree to abide by its terms.

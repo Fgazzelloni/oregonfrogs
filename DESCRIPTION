@@ -1,34 +1,38 @@
-Package: oregonfrogs
 Type: Package
+Package: oregonfrogs
 Title: Oregon Spotted A Frog (Rana Pretiosa)
 Version: 0.1.0
 Date: 2022-08-26
-Authors@R: c(
-    person(given = "Federica",
-           family = "Gazzelloni",
-           role = c("aut", "cre"),
-           email = "fede.gazzelloni@gmail.com",
-           comment = c(ORCID = "0000-0002-4285-611X")))
+Authors@R: 
+    person("Federica", "Gazzelloni", , "fede.gazzelloni@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4285-611X"))
 Maintainer: The package maintainer <fede.gazzelloni@gmail.com>
 Description: Oregon Frogs Rana Pretiosa dataset contains information about
-    radio telemetry frequency used to study the frogs' habitat. 
-    The survey run from late September to November 2018. 
-    There are 311 observations and 16 variables. 
+    radio telemetry frequency used to study the frogs' habitat.  The
+    survey run from late September to November 2018.  There are 311
+    observations and 16 variables.
 License: MIT + file LICENSE
-Encoding: UTF-8
-LazyData: true
-Depends: 
-    R (>= 2.10)
-Imports: 
-    ggthemes,
-    tidyverse
-RoxygenNote: 7.2.1
-Suggests: 
-    knitr,
-    rmarkdown,
-    testthat (>= 3.0.0)
 URL: https://fgazzelloni.github.io/oregonfrogs/,
     https://github.com/fgazzelloni/oregonfrogs
 BugReports: https://github.com/fgazzelloni/oregonfrogs/issues
+Depends: 
+    R (>= 2.10)
+Imports: 
+    devtools,
+    dplyr,
+    ggthemes,
+    rlang (>= 0.4.11),
+    sf,
+    tidyverse
+Suggests: 
+    knitr,
+    rmarkdown,
+    roxygen2,
+    testthat (>= 3.0.0)
+VignetteBuilder: 
+    knitr
 Config/Needs/website: here
-VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3

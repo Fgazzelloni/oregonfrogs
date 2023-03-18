@@ -7,6 +7,7 @@
 #' @export
 #'
 #' @examples
+#' frogsfunction(orfrogs, frequency)
 frogsfunction <- function(data,predictor) {
   predictor_vector <- data$predictor
   print(predictor_vector)
