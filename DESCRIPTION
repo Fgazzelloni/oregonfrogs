@@ -18,12 +18,9 @@ BugReports: https://github.com/fgazzelloni/oregonfrogs/issues
 Depends: 
     R (>= 2.10)
 Imports: 
-    devtools,
     dplyr,
-    ggthemes,
     rlang (>= 0.4.11),
-    sf,
-    tidyverse
+    sf
 Suggests: 
     knitr,
     rmarkdown,
