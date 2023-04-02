@@ -9,12 +9,16 @@
 [![R-CMD-check](https://github.com/Fgazzelloni/oregonfrogs/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Fgazzelloni/oregonfrogs/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of oregonfrogs is to provide a great dataset for data
+The goal of **oregonfrogs** is to provide a great dataset for data
 exploration & visualization.
+
+Original source of data is a **@USGS** study from Pearl, C.A., Rowe,
+J.C., McCreary, B., and Adams, M.J., 2022. Geological Survey data
+release: <https://doi.org/10.5066/P9DACPCV>.
 
 ## Installation
 
-You can install the development version of oregonfrogs like so:
+You can install the development version of **oregonfrogs** like so:
 
 To install the development version from [GitHub](https://github.com/)
 use:
@@ -37,7 +41,7 @@ data(package = 'oregonfrogs')
 Let’s have a look at the dataset provided `orfrogs`.
 
 ``` r
-head(orfrogs)
+head(oregonfrogs)
   detection survey_date doy      long      lat sex frequency interval subsite
 1  Captured  2018-09-25 268 -121.7903 43.76502   0   164.169        0 SE Pond
 2 No visual  2018-10-02 275 -121.7905 43.76503   0   164.169        1 SE Pond

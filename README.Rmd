@@ -29,11 +29,14 @@ library(oregonfrogs)
 [![R-CMD-check](https://github.com/Fgazzelloni/oregonfrogs/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Fgazzelloni/oregonfrogs/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of oregonfrogs is to provide a great dataset for data exploration & visualization.
+The goal of **oregonfrogs** is to provide a great dataset for data exploration & visualization.
+
+Original source of data is a **@USGS** study from Pearl, C.A., Rowe, J.C., McCreary, B., and Adams, M.J., 2022. Geological Survey data release: [https://doi.org/10.5066/P9DACPCV](https://doi.org/10.5066/P9DACPCV).
+
 
 ## Installation
 
-You can install the development version of oregonfrogs like so:
+You can install the development version of **oregonfrogs** like so:
 
 To install the development version from [GitHub](https://github.com/) use:
 
@@ -55,7 +58,7 @@ data(package = 'oregonfrogs')
 Let's have a look at the dataset provided `orfrogs`.
 
 ```{r data}
-head(orfrogs)
+head(oregonfrogs)
 ```
 
 
@@ -63,7 +66,7 @@ head(orfrogs)
 For example we can use the package for making data visualization:
 
 ```{r habitat, echo = FALSE}
-ggplot(orfrogs,
+ggplot(oregonfrogs,
        aes(x=hab_type,y=frequency))+
          geom_point(aes(color=factor(sex)),size=2,alpha=0.5)+
 ggthemes::scale_color_tableau()+

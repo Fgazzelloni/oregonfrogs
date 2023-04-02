@@ -2,7 +2,7 @@
 library(tidyverse)
 library(sf)
 
-d <- read_csv("data-raw/orfrogs_raw.csv",
+d <- read_csv("data-raw/oregonfrogs_raw.csv",
                                 col_names = TRUE,
                                 trim_ws = FALSE,
                                 skip = 2)
@@ -15,7 +15,7 @@ d1 <- d %>%
          doy=as.integer(doy))
 
 
-orfrogs <- d1 %>%
+oregonfrogs <- d1 %>%
   dplyr::select(utme_83, utmn_83) %>%
   sf::st_as_sf(coords = c(1,2),
                crs = "+proj=utm +zone=10") %>%
@@ -28,5 +28,5 @@ orfrogs <- d1 %>%
   relocate(subsite,hab_type,.after=interval)
 
 
-usethis::use_data(orfrogs, overwrite = TRUE) # save as package dataset!
+usethis::use_data(oregonfrogs, overwrite = TRUE) # save as package dataset!
 devtools::document()
