@@ -2,8 +2,8 @@
 % Please edit documentation in R/oregonfrogs-package.R
 \docType{package}
 \name{oregonfrogs-package}
-\alias{oregonfrogs}
 \alias{oregonfrogs-package}
+\alias{_PACKAGE}
 \title{oregonfrogs: Oregon Spotted A Frog (Rana Pretiosa)}
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}

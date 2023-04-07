@@ -1,3 +1,4 @@
+#' @aliases oregonfrogs-package
 #' @keywords internal
 "_PACKAGE"
 

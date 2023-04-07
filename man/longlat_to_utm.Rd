@@ -20,5 +20,5 @@ a dataframe
 longlat_to_utm
 }
 \examples{
-longlat_to_utm(orfrogs, "+proj=longlat +datum=WGS84", "+proj=utm +zone=10")
+longlat_to_utm(oregonfrogs, "+proj=longlat +datum=WGS84", "+proj=utm +zone=10")
 }

@@ -19,7 +19,6 @@ Depends:
     R (>= 2.10)
 Imports: 
     dplyr,
-    rlang (>= 0.4.11),
     sf
 Suggests: 
     knitr,
