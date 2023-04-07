@@ -13,7 +13,7 @@
     <loc>https://fgazzelloni.github.io/oregonfrogs/articles/index.html</loc>
   </url>
   <url>
-    <loc>https://fgazzelloni.github.io/oregonfrogs/articles/oregonfrogs.html</loc>
+    <loc>https://fgazzelloni.github.io/oregonfrogs/articles/intro.html</loc>
   </url>
   <url>
     <loc>https://fgazzelloni.github.io/oregonfrogs/authors.html</loc>
@@ -35,6 +35,9 @@
   </url>
   <url>
     <loc>https://fgazzelloni.github.io/oregonfrogs/reference/oregonfrogs_raw.html</loc>
+  </url>
+  <url>
+    <loc>https://fgazzelloni.github.io/oregonfrogs/reference/pipe.html</loc>
   </url>
   <url>
     <loc>https://fgazzelloni.github.io/oregonfrogs/reference/utm_to_longlat.html</loc>
