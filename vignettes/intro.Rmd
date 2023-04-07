@@ -2,7 +2,7 @@
 title: "Introduction to oregonfrogs"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{oregonfrogs}
+  %\VignetteIndexEntry{Introduction to oregonfrogs}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-The oregonfrogs R package contains two datasets:
+The `oregonfrogs` R package contains two datasets:
 
 - `oregonfrogs_raw`
 - `oregonfrogs`

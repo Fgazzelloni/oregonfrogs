@@ -20,8 +20,12 @@ Depends:
 Imports: 
     dplyr,
     ggplot2,
+    ggraph,
+    igraph,
     magrittr,
-    sf
+    sf,
+    tidymodels,
+    tidyverse
 Suggests: 
     knitr,
     rmarkdown,

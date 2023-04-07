@@ -1,0 +1,89 @@
+---
+title: "Logistic Regression"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Modeling}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "",
+  message = FALSE,
+  warning = FALSE
+)
+```
+
+
+Here is an application of the logistic_reg `glm` with `oregonfrogs`.
+
+```{r setup}
+library(oregonfrogs)
+library(tidyverse)
+library(tidymodels)
+```
+
+
+```{r}
+frogs <- oregonfrogs %>%
+  janitor::clean_names() %>%
+  mutate(survey_date=as.Date(survey_date,"%m/%d/%Y"),
+         sex=as.factor(sex))%>%
+  arrange(doy) 
+```
+
+```{r}
+set.seed(123)
+split <- initial_split(frogs, strata = sex, prop = 0.9)
+training <- training(split)
+test <- testing(split)
+
+cv_folds <- vfold_cv(training,strata = sex,v = 10,repeats = 5)
+```
+
+
+```{r}
+log_mod <- logistic_reg() %>%
+  set_mode("classification") %>%
+  set_engine("glm")
+```
+
+
+```{r}
+library(themis)
+recipe <- recipe(sex ~ . ,training) %>% 
+    step_downsample(sex) %>%
+    step_date(survey_date,keep_original_cols = FALSE) %>% 
+    step_corr(all_numeric(),threshold = 0.8) %>%
+    step_dummy(all_nominal(), -all_outcomes()) %>%
+    step_zv(all_numeric()) %>%
+    step_normalize(all_numeric()) 
+
+log_wkf <- workflow() %>%
+  add_recipe(recipe) %>%
+  add_model(log_mod) %>%
+  fit(training)
+```
+
+```{r}
+final_mod <- last_fit(log_wkf, split)
+```
+
+```{r}
+final_mod %>%
+  augment() %>%
+  conf_mat(truth = sex, estimate = .pred_class)
+```
+
+```{r}
+two_class_curve <- final_mod %>%
+  augment() %>%
+  roc_curve(truth = sex, estimate = .pred_0)
+
+
+autoplot(two_class_curve)
+```
+
+
