@@ -25,6 +25,7 @@ Imports:
     janitor,
     magrittr,
     sf,
+    themis,
     tidymodels,
     tidyverse
 Suggests: 
