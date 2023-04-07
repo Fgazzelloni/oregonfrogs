@@ -38,7 +38,7 @@ library(oregonfrogs)
 data(package = 'oregonfrogs')
 ```
 
-Let’s have a look at the dataset provided `orfrogs`.
+Let’s have a look at the dataset provided `oregonfrogs`.
 
 ``` r
 head(oregonfrogs)
