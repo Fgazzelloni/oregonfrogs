@@ -20,5 +20,5 @@ a dataframe
 utm_to_longlat
 }
 \examples{
-utm_to_longlat(oregonfrogs_raw, utm_crs = "+proj=utm +zone=10", longlat_crs= "+proj=longlat +datum=WGS84") \%>\% head()
+utm_to_longlat(oregonfrogs_raw, "+proj=utm +zone=10", "+proj=longlat +datum=WGS84")[1:5,1:4]
 }

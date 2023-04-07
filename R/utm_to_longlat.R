@@ -15,7 +15,7 @@
 #' @export
 #'
 #' @examples
-#' utm_to_longlat(oregonfrogs_raw, utm_crs = "+proj=utm +zone=10", longlat_crs= "+proj=longlat +datum=WGS84") %>% head()
+#' utm_to_longlat(oregonfrogs_raw, "+proj=utm +zone=10", "+proj=longlat +datum=WGS84")[1:5,1:4]
 utm_to_longlat <- function(data, utm_crs, longlat_crs) {
   data %>%
     select(contains("utm", ignore.case = TRUE)) %>%
