@@ -5,7 +5,8 @@ articles:
   example: example.html
   intro_to_oregonfrogs: intro_to_oregonfrogs.html
   modeling: modeling.html
-last_built: 2023-04-08T07:57Z
+  oregonfrogs: oregonfrogs.html
+last_built: 2023-04-08T17:59Z
 urls:
   reference: https://fgazzelloni.github.io/oregonfrogs/reference
   article: https://fgazzelloni.github.io/oregonfrogs/articles
