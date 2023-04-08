@@ -5,7 +5,7 @@
 \alias{oregonfrogs}
 \title{Oregon Spotted a Frog (Rana pretiosa)}
 \format{
-A data frame with 311 rows and 16 cols.
+A data frame with 311 rows and 15 cols.
 
 Variables:
 

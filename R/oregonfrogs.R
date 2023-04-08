@@ -5,7 +5,7 @@
 #' Radio-telemetry has been used to study late-season movement and habitat use by Oregon spotted frogs (Rana pretiosa) at Crane Prairie Reservoir in Oregon. This dataset includes individual frog location data and habitat use during each tracking event that occurred roughly weekly between September and late November of 2018.
 #'
 #'
-#' @format A data frame with 311 rows and 16 cols.
+#' @format A data frame with 311 rows and 15 cols.
 #'
 #' Variables:
 #'
