@@ -2,7 +2,7 @@
 title: "Introduction to oregonfrogs"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Introduction to oregonfrogs}
+  %\VignetteIndexEntry{oregonfrogs}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

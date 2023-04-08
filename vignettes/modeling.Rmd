@@ -28,7 +28,6 @@ library(tidymodels)
 
 ```{r}
 frogs <- oregonfrogs %>%
-  janitor::clean_names() %>%
   mutate(survey_date=as.Date(survey_date,"%m/%d/%Y"),
          sex=as.factor(sex))%>%
   arrange(doy) 
