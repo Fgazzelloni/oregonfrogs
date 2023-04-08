@@ -1,11 +1,12 @@
 ---
-title: "Introduction to oregonfrogs"
+title: "Introduction to OregonFrogs"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{oregonfrogs}
+  %\VignetteIndexEntry{Introduction to OregonFrogs}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
