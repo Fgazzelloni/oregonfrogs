@@ -85,7 +85,7 @@ two_class_curve <- final_mod %>%
 autoplot(two_class_curve)
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE,out.width="50%",fig.align='center'}
 knitr::include_graphics("images/roc-curve.png")
 ```
 
