@@ -1,5 +1,5 @@
 ---
-title: "oregonfrogs"
+title: "Introduction to OregonFrogs"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{oregonfrogs}
@@ -7,13 +7,70 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
+
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = "",
+  out.width = "100%",
+  warning = FALSE,
+  message = FALSE,
+  fig.align = 'center'
 )
 ```
+
+The `oregonfrogs` R package contains two datasets:
+
+- `oregonfrogs_raw`
+- `oregonfrogs`
+
+In addition, it provides two useful functions for spatial data manipulation:
+
+- `longlat_to_utm()`
+- `utm_to_longlat()`
+
 
 ```{r setup}
 library(oregonfrogs)
 ```
+
+
+Let's see how to use it
+```{r}
+oregonfrogs_raw %>%
+  dplyr::select(SurveyDate, Frequency, UTME_83, UTMN_83) %>%
+  head()
+```
+
+How to use `longlat_to_utm()` to transform the UTM coordinates to LongLat:
+
+```{r}
+oregonfrogs_raw %>%
+  dplyr::select(SurveyDate, Frequency, UTME_83, UTMN_83) %>%
+  utm_to_longlat(utm_crs = "+proj=utm +zone=10",
+                 longlat_crs = "+proj=longlat +datum=WGS84") %>%
+  head()
+```
+
+Here a simple usage of the spatial coordinates is done for showing possible patterns in frogs movements. The `ggplot2::geom_smooth()` function shows two models the linear model (`lm`) and the LOESS.
+```{r}
+library(ggplot2)
+oregonfrogs_raw %>%
+  dplyr::select(SurveyDate, Frequency, UTME_83, UTMN_83) %>%
+  utm_to_longlat(utm_crs = "+proj=utm +zone=10",
+                 longlat_crs = "+proj=longlat +datum=WGS84") %>%
+  ggplot(aes(x = X, y = Y)) +
+  geom_point(
+    alpha = 0.5,
+    shape = 21,
+    stroke = 0.5,
+    fill = "#32cd32"
+  ) +
+  geom_smooth(color = "#cf5f25", alpha = 0.2) +
+  geom_smooth(method = "lm",
+              color = "#a8bd3a",
+              alpha = 0.2) +
+  labs(x = "Longitude", y = "Latitude") +
+  theme_bw()
+```
+
