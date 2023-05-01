@@ -76,7 +76,7 @@ final_mod %>%
   conf_mat(truth = sex, estimate = .pred_class)
 ```
 
-```{r}
+```{r eval=FALSE}
 two_class_curve <- final_mod %>%
   augment() %>%
   roc_curve(truth = sex, estimate = .pred_0)
@@ -85,4 +85,7 @@ two_class_curve <- final_mod %>%
 autoplot(two_class_curve)
 ```
 
+```{r echo=FALSE}
+knitr::include_graphics("images/roc-curve.png")
+```
 
