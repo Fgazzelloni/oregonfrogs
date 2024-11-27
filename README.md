@@ -16,6 +16,10 @@ Original source of data is a **@USGS** study from Pearl, C.A., Rowe,
 J.C., McCreary, B., and Adams, M.J., 2022. Geological Survey data
 release: <https://doi.org/10.5066/P9DACPCV>.
 
+## Book
+
+[How-to-Spatial-Modeling-with-R](https://fgazzelloni.github.io/How-to-Spatial-Modeling-with-R/)
+
 ## Installation
 
 You can install the development version of **oregonfrogs** like so:
